@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -28,6 +27,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
 
-    - name: Run tests
+    - name: Run tests and save reports
       run: |
-        pytest
+        pytest --junitxml=report.xml
+        pytest > result.txt
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: |
+          report.xml
+          result.txt
