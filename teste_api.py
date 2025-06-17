@@ -24,8 +24,6 @@ def teste_get_pokemon_list():
         data = response.json()
         assert "results" in data
         assert len(data["results"]) > 0
-
-        # Exibe os 20 primeiros Pokémon da lista
         print("Os 20 primeiros pokemons:", [pokemon['name'] for pokemon in data["results"][:20]])
 
 def teste_pokemon_por_id():
