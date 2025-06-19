@@ -57,7 +57,7 @@ pytest Testes_Pytest.py -m suite1
 ```
 Para rodar só a suite de teste 2 (UI):
 ```bash
-pytest Testes_Pytest.py -m suite1
+pytest Testes_Pytest.py -m suite2
 ```
 
 Os relatórios são gerados automaticamente após os testes finalizarem
