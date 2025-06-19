@@ -41,9 +41,9 @@ pip install pytest-reporter-html
 ```bash
 pip install pytest-metadata
 ```
-### 8. Instalar o pytest-metadata para auxiliar nos dados do relatório
+### 8. Instalar o python-dateutil para auxiliar nos dados do relatório
 ```bash
-pip install pytest-metadata
+pip install python-dateutil
 ```
 
 ## Como rodar os testes?
