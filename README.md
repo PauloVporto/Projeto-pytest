@@ -1,6 +1,6 @@
-# Projeto de Testes com pytest e HTTPX
+# Projeto de Testes com pytest
 
-Este projeto utiliza o `pytest` para testar funcionalidades de uma aplicação, com o uso de **HTTPX** para interagir com APIs e **pytest-html** para gerar relatórios de testes em HTML. Abaixo, explicamos o processo de instalação das dependências e como rodar os testes.
+Este projeto utiliza o `pytest` para testar funcionalidades de uma aplicação, com o uso de **HTTPX** para interagir com APIs, **pytest-reporter-html** para gerar relatórios de testes em HTML e **Selenium** para interagir com interfaces. Abaixo, explicamos o processo de instalação das dependências e como rodar os testes.
 
 ## Pré-requisitos
 
@@ -48,6 +48,6 @@ pip install pytest-metadata
 
 ## Como rodar os testes?
 ```bash
-pytest teste_api.py
+pytest Testes_Pytest.py
 ```
 Os relatórios são gerados automaticamente após os testes finalizarem
