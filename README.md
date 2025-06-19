@@ -28,12 +28,26 @@ pip install pytest
 pip install httpx
 ```
 
-### 5. Instalar o pytest-html para gerar os relatórios
+### 5. Instalar o selenium para os testes de UI
 ```bash
-pip install pytest-html
+pip install selenium
 ```
 
-## Como gerar os relatórios?
+### 6. Instalar o pytest-reporter-html para gerar os relatórios
 ```bash
-python -m pytest teste_api.py --html=relatorio.html --template=template.html --css=assets/style.css
+pip install pytest-reporter-html
 ```
+### 7. Instalar o pytest-metadata para auxiliar nos dados do relatório
+```bash
+pip install pytest-metadata
+```
+### 8. Instalar o pytest-metadata para auxiliar nos dados do relatório
+```bash
+pip install pytest-metadata
+```
+
+## Como rodar os testes?
+```bash
+pytest teste_api.py
+```
+Os relatórios são gerados automaticamente após os testes finalizarem
