@@ -47,7 +47,17 @@ pip install python-dateutil
 ```
 
 ## Como rodar os testes?
+Para rodar todos os testes:
 ```bash
 pytest Testes_Pytest.py
 ```
+Para rodar só a suite de teste 1 (API):
+```bash
+pytest Testes_Pytest.py -m suite1
+```
+Para rodar só a suite de teste 2 (UI):
+```bash
+pytest Testes_Pytest.py -m suite1
+```
+
 Os relatórios são gerados automaticamente após os testes finalizarem
