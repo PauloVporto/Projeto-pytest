@@ -12,6 +12,8 @@ BASE_URL2 = "https://demoqa.com"
 BASE_URL3 = "https://fetin-api.confianopai.com"
 BASE_URL4 = "https://www.demoblaze.com/index.html"
 
+# Teste API -------------------------------------------------------------
+
 def gerar_usuario():
     agora = datetime.now()
     timestamp = agora.strftime("%H%M%S")
@@ -167,7 +169,7 @@ def teste_API_2_delete_invalido_de_usuario(xsrf_token, jsessionid):
     assert response.status_code == 200
     print("Usuário não encontrado:", response.json())
 
-
+# Teste UI -------------------------------------------------------------
 
 @pytest.fixture
 def driver():
